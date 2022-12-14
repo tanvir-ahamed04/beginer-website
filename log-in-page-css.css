@@ -1,0 +1,91 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    font-family:sans-serif;
+    
+    background-size: cover;
+}
+.snk{
+
+        border-radius: 50%;
+      
+}
+.box{
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    background-color: none;
+    opacity: 80%;
+    box-shadow: 1px 5px 5px 1px rgb(145, 194, 170),
+    1px -5px 5px 1px rgb(145, 194, 170);
+    
+}
+.box input[type="text"], .box input[type="Password"]
+{
+    border: 0;
+    background:linear-gradient(rgb(20, 233, 240), rgb(36, 221, 61));;
+    display:block;
+    margin: 20px auto;
+    text-align: center;
+    padding: 13px 10px;
+    border: 3px solid rgb(24, 26, 25);
+    width: 300px;
+    outline: none;
+    color: rgb(33, 35, 35);
+    border-radius: 12px;
+    transition: 0.30px;
+}
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%; 
+    min-height: 100%;}
+ #textz{
+      color: azure;
+    }
+
+.box input[type="text"], .box input[type="Password"]:focus{
+
+    width: 300px;
+    border-color:rgb(21, 22, 22) ;
+
+}
+
+.box input[type="submit"]{
+   
+    border: 0;
+    background:linear-gradient(rgb(20, 233, 240), rgb(36, 221, 61));;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 14px 10px;
+    border: 3px solid rgb(26, 27, 27);
+    width: 150px;
+    outline: none;
+    color: rgb(28, 31, 31);
+    border-radius: 12px;
+    transition: 0.30px;
+   
+}
+.box input[type="submit"]:hover{
+    background:rgb(209, 216, 211);
+    
+}
+.box input[type="text"]:hover{
+    background: rgb(218, 221, 217);
+}
+.box input[type="Password"]:hover{
+    background: rgb(211, 222, 212);
+}
+#textz{
+    font-weight: bold;
+    text-align: center;
+    
+}
